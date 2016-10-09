@@ -21,6 +21,17 @@ namespace ATMore.WebApi.Controllers
             _ATMoreMarketDataModels = new ATMoreMarketDataModels(connnectionString);
         }
 
+        /// <summary>
+        /// <param name="Address"></param>
+        /// <param name="Latgitude"></param>
+        /// <param name="Longitude"></param>
+        /// <param name="Time"></param>
+        /// <param name="Amount"></param>
+        /// <param name="AccountID"></param>
+        /// <param name="Status"></param>
+        /// <param name="Notes"></param>
+        /// </summary>
+        /// <returns></returns>
         [HttpPost]
         [Route("ATMoreMerkets/Market_Insert")]
         public async Task<HttpResponseMessage> Market_Insert()
@@ -38,6 +49,11 @@ namespace ATMore.WebApi.Controllers
             }
         }
 
+        /// <summary>
+        /// <param name="PackageID"></param>
+        /// <param name="Status"></param>
+        /// </summary>
+        /// <returns></returns>
         [HttpPost]
         [Route("ATMoreMerkets/Market_Delete")]
         public async Task<HttpResponseMessage> Market_Delete()
@@ -55,6 +71,14 @@ namespace ATMore.WebApi.Controllers
             }
         }
 
+        /// <summary>
+        /// <param name="FiterSQL"></param>
+        /// <param name="OrderSQL"></param>
+        ///  <param name="PageNo"></param>
+        ///  <param name="PageSize"></param>
+        ///  <param name="PRINT"></param>
+        /// </summary>
+        /// <returns></returns>
         [HttpPost]
         [Route("ATMoreMerkets/Market_Select")]
         public async Task<HttpResponseMessage> Market_Select()
@@ -71,6 +95,10 @@ namespace ATMore.WebApi.Controllers
             }
         }
 
+        /// <summary>
+        /// <param name="PackageID"></param>
+        /// </summary>
+        /// <returns></returns>
         [HttpPost]
         [Route("ATMoreMerkets/Market_Select_ByID/{PackageID}")]
         public  HttpResponseMessage Market_Select_ByID(Int64 PackageID)
@@ -90,6 +118,16 @@ namespace ATMore.WebApi.Controllers
             }
         }
 
+        /// <summary>
+        /// <param name="PackageID"></param>
+        /// <param name="Address"></param>
+        ///  <param name="Latgitude"></param>
+        ///  <param name="Longitude"></param>
+        ///  <param name="Time"></param>
+        ///  <param name="Amount"></param>
+        ///  <param name="Notes"></param>
+        /// </summary>
+        /// <returns></returns>
         [HttpPost]
         [Route("ATMoreMerkets/Market_Update")]
         public async Task<HttpResponseMessage> Market_Update()

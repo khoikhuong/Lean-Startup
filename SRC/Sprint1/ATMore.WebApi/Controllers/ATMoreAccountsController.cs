@@ -21,6 +21,11 @@ namespace ATMore.WebApi.Controllers
             _ATMoreAccountDataModels = new ATMoreAccountDataModels(this.connnectionString);
         }
 
+
+        /// <summary>
+        /// <param name="phone"></param>
+        /// </summary>
+        /// <returns></returns>
         [HttpPost]
         [Route("ATMoreAccounts/Account_CheckPhone/{phone}")]
         public HttpResponseMessage Account_CheckPhone(string phone)
@@ -31,6 +36,10 @@ namespace ATMore.WebApi.Controllers
             return this.Request.CreateResponse(HttpStatusCode.OK, Result);
         }
 
+        /// <summary>
+        /// <param name="AccountID"></param>
+        /// </summary>
+        /// <returns></returns>
         [HttpPost]
         [Route("ATMoreAccounts/Account_SelectByID/{AccountID}")]
         public HttpResponseMessage Account_SelectByID(Int64 AccountID)
@@ -43,6 +52,16 @@ namespace ATMore.WebApi.Controllers
             return this.Request.CreateResponse(HttpStatusCode.OK, Result);
         }
 
+        /// <summary>
+        /// <param name="Phone"></param>
+        /// <param name="Password"></param>
+        /// <param name="FacebookID"></param>
+        /// <param name="GoogleID"></param>
+        /// <param name="Sex"></param>
+        /// <param name="Avartar"></param>
+        /// <param name="Birthdate"></param>
+        /// </summary>
+        /// <returns></returns>
         [HttpPost]
         [Route("ATMoreAccounts/Account_Create")]
         public async Task<HttpResponseMessage> Account_Create()
@@ -59,6 +78,13 @@ namespace ATMore.WebApi.Controllers
             }
         }
 
+        /// <summary>
+        /// <param name="Phone"></param>
+        /// <param name="Password"></param>
+        /// <param name="FacebookID"></param>
+        /// <param name="GoogleID"></param>
+        /// </summary>
+        /// <returns></returns>
         [HttpPost]
         [Route("ATMoreAccounts/Account_Authenticate")]
         public async Task<HttpResponseMessage> Account_Authenticate()
@@ -76,6 +102,13 @@ namespace ATMore.WebApi.Controllers
             }
         }
 
+        /// <summary>
+        /// <param name="AccountID"></param>
+        /// <param name="Sex"></param>
+        /// <param name="Avartar"></param>
+        /// <param name="Birthdate"></param>
+        /// </summary>
+        /// <returns></returns>
         [HttpPost]
         [Route("ATMoreAccounts/Account_Update")]
         public async Task<HttpResponseMessage> Account_Update()

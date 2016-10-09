@@ -21,6 +21,14 @@ namespace ATMore.WebApi.Controllers
             _ATMoreProviderDataModels = new ATMoreProviderDataModels(connnectionString);
         }
 
+        /// <summary>
+        /// <param name="FiterSQL"></param>
+        /// <param name="OrderSQL"></param>
+        /// <param name="PageNo"></param>
+        /// <param name="PageSize"></param>
+        /// <param name="PRINT"></param>
+        /// </summary>
+        /// <returns></returns>
         [HttpPost]
         [Route("ATMoreProviders/Provider_Select")]
         public async Task<HttpResponseMessage> Provider_Select()
