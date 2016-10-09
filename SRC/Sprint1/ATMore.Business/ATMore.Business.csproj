@@ -46,6 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\ATMoreMarketDataModel\ATMoreMarketDataModels.cs" />
+    <Compile Include="Common\ATMoreAccountDataModel\ATMoreAccountDataModels.cs" />
+    <Compile Include="Common\ATMoreProviderDataModel\ATMoreProviderDataModels.cs" />
     <Compile Include="Helper\AppHelper.cs" />
     <Compile Include="Helper\ConfigHelper.cs" />
     <Compile Include="Helper\SecurityHelper.cs" />
@@ -57,7 +60,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Common\" />
     <Folder Include="Service\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

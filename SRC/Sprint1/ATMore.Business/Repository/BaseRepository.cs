@@ -569,6 +569,23 @@ namespace WebApi.Common.Helper
             object result = this.GetCommand(sqlStatement, paramIN, CommandType.StoredProcedure).ExecuteScalar();
             return result;
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sqlStatement"></param>
+        /// <param name="parameIN"></param>
+        /// <param name="parameOUT"></param>
+        /// <param name="_typeCode"></param>
+        /// <returns></returns>
+        public object ProcForValue(string sqlStatement, IDictionary<string,object> parameIN = null,string parameOUT = "" , TypeCode _typeCode = TypeCode.Empty)
+        {
+            SqlCommand sqlCommand = this.GetCommand(sqlStatement, parameIN, CommandType.StoredProcedure);
+            var sqlParam =  GetSqlParameterOUT(parameOUT, _typeCode, ParameterDirection.ReturnValue);
+            sqlCommand.Parameters.Add(sqlParam);
+            sqlCommand.ExecuteNonQuery();
+            object RESULT = sqlCommand.Parameters[parameOUT].Value;
+            return RESULT;
+        }
 
      
         #endregion
