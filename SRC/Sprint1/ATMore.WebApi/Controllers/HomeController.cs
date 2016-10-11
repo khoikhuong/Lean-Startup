@@ -5,12 +5,12 @@ using System.Web.Mvc;
 
 namespace ATMore.WebApi.Controllers
 {
-    [Authorize]
-    public class HomeController : Controller
-    {
-        public ActionResult Index()
-        {
-            return View();
-        }
-    }
+    //[Authorize]
+    //public class HomeController : Controller
+    //{
+    //    public ActionResult Index()
+    //    {
+    //        return View();
+    //    }
+    //}
 }
