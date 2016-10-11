@@ -6,7 +6,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Reflection;
 
-namespace WebApi.Common.Helper
+namespace ATMore.Business.Helper
 {
     public class BaseDao : IDisposable
     {

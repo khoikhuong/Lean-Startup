@@ -3,3 +3,7 @@ E:\data\Grabcash\ATMore.V2\Learn-Startup\SRC\Sprint1\Bin\ATMore.Business.pdb
 E:\data\Grabcash\ATMore.V2\Learn-Startup\SRC\Sprint1\ATMore.Business\obj\Debug\ATMore.Business.csprojResolveAssemblyReference.cache
 E:\data\Grabcash\ATMore.V2\Learn-Startup\SRC\Sprint1\ATMore.Business\obj\Debug\ATMore.Business.dll
 E:\data\Grabcash\ATMore.V2\Learn-Startup\SRC\Sprint1\ATMore.Business\obj\Debug\ATMore.Business.pdb
+E:\Lean Startup\SRC\Sprint1\Bin\ATMore.Business.dll
+E:\Lean Startup\SRC\Sprint1\Bin\ATMore.Business.pdb
+E:\Lean Startup\SRC\Sprint1\ATMore.Business\obj\Debug\ATMore.Business.dll
+E:\Lean Startup\SRC\Sprint1\ATMore.Business\obj\Debug\ATMore.Business.pdb

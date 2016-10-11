@@ -1,9 +1,8 @@
-﻿using ATMore.Business.Common.ATMoreProviderDataModel;
-using ATMore.Business.Helper;
+﻿using ATMore.Business.Helper;
+using ATMore.Business.Repository.ATMoreProviderDataModel;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
-using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
